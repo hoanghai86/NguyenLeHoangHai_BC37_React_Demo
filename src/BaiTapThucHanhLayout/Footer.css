@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  text-align: center;
+  background-color: #212529;
+  box-shadow: 0 2px 4px #e2ebfc;
+  height: 80px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
