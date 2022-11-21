@@ -16,7 +16,8 @@ import "./App.css";
 // import Home from "./Ex4/Home"
 // import Home from "./Ex4Ver1/Home"
 // import MovieBooking from "./Ex5/MovieBooking";
-import Home from "./Ex6/Home";
+import Demo from "./LifeCycle/Demo"
+// import Home from "./Ex6/Home";
 
 class App extends React.Component {
   render() {
@@ -33,8 +34,9 @@ class App extends React.Component {
         {/* <ProductList /> */}
         {/* <MoviesList /> */}
         {/* <StudentList /> */}
-        <Home />
+        {/* <Home /> */}
         {/* <MovieBooking /> */}
+        <Demo />
       </div>
     );
   }
