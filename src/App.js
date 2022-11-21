@@ -16,14 +16,14 @@ import "./App.css";
 // import Home from "./Ex4/Home"
 // import Home from "./Ex4Ver1/Home"
 // import MovieBooking from "./Ex5/MovieBooking";
-import Demo from "./LifeCycle/Demo";
-// import Home from "./Ex6/Home";
+// import Demo from "./LifeCycle/Demo";
+import Home from "./Ex6/Home";
 
 class App extends React.Component {
-  state = {
-    a: 1,
-    b: 1,
-  };
+  // state = {
+  //   a: 1,
+  //   b: 1,
+  // };
 
   render() {
     return (
@@ -39,9 +39,9 @@ class App extends React.Component {
         {/* <ProductList /> */}
         {/* <MoviesList /> */}
         {/* <StudentList /> */}
-        {/* <Home /> */}
+        <Home />
         {/* <MovieBooking /> */}
-        <h3>A: {this.state.a}</h3>
+        {/* <h3>A: {this.state.a}</h3>
         <button
           onClick={() => {
             this.setState({
@@ -53,7 +53,7 @@ class App extends React.Component {
         </button>
         <h1>------------</h1>
         {this.state.a % 2 === 0 && <Demo a={this.state.a} />}
-        <h1>------------</h1>
+        <h1>------------</h1> */}
       </div>
     );
   }

@@ -1,22 +1,11 @@
 import React, { Component } from "react";
-import axios from "axios";
 import { connect } from "react-redux";
+import { fetchStudentDetailsAction } from "./redux/action";
 
 class StudentList extends Component {
   //khi user nhấn nút cập nhật thì lên API lấy danh sách sinh viên xuống
   fetchStudentDetail = async (id) => {
-    try {
-      const res = await axios({
-        method: "GET",
-        url: "https://5bd2959ac8f9e400130cb7e9.mockapi.io/api/students/" + id,
-      });
-      this.props.dispatch({
-        type: "student/setSelectedStudent",
-        payload: res.data,
-      });
-    } catch (error) {
-      console.log(error);
-    }
+    this.props.dispatch(fetchStudentDetailsAction(id));
   };
 
   render() {
