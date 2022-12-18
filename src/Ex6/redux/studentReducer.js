@@ -1,3 +1,5 @@
+import actionType from "./type";
+
 const initialState = {
   studentList: [],
   isLoading: false, //biến tắt mở biểu tượng tiến trình spinner
@@ -6,19 +8,19 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case "student/setStudentList":
+    case actionType.SET_STUDENT_LIST:
       state.studentList = action.payload;
       return { ...state }; //trả về mảng copy để redux nhận thấy sự thay đổi và render lại giao diện
 
-    case "student/showLoading":
+    case actionType.SHOW_LOADING:
       state.isLoading = true;
       return { ...state };
 
-    case "student/hideLoading":
+    case actionType.HIDE_LOADING:
       state.isLoading = false;
       return { ...state };
 
-    case "student/setSelectedStudent":
+    case actionType.SET_SELECTED_STUDENT:
       state.selectedStudent = action.payload;
       return { ...state };
 
